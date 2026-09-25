@@ -37,88 +37,136 @@
 
 <body>
     <h1>Privacy Policy for SwipeLock</h1>
-    <p class="last-updated">Last updated: November 29, 2024</p>
+    <p class="last-updated">Last updated: September 19, 2026</p>
 
     <div class="section">
-        <h2>Introduction</h2>
-        <p>SwipeLock ("we", "our", "us") respects your privacy and is committed to protecting your personal data. This
-            privacy policy explains how we handle your information when you use our mobile application.</p>
-    </div>
-
-    <div class="section">
-        <h2>Data Collection</h2>
-        <h3>Photos and Videos</h3>
+        <h2>Summary</h2>
+        <p>SwipeLock shows one of your photos on screen and pins it there, so you can hand
+            your phone to someone without them browsing the rest of your gallery.</p>
         <ul>
-            <li><strong>Access:</strong> SwipeLock accesses your photos and videos stored locally on your device for
-                viewing purposes only.</li>
-            <li><strong>Storage:</strong> All photos and videos remain on your device. We do not upload, store, or
-                transmit your media files to our servers or any third-party servers.</li>
-            <li><strong>Usage:</strong> Media files are only accessed when you open the app and are used solely for
-                display within the app's gallery and viewer.</li>
-        </ul>
-
-        <h3>Analytics Data</h3>
-        <p>We use Firebase Analytics to improve our app. The following anonymous data may be collected:</p>
-        <ul>
-            <li>Device information (model, OS version, screen size)</li>
-            <li>App usage statistics (features used, session duration)</li>
-            <li>Anonymous user identifier (Firebase Installation ID) used for analytics</li>
-            <li><strong>Unique Device Identifier (Android ID)</strong>: Collected solely to enforce usage limits for our
-                free tier and prevent abuse. This identifier is NOT used for advertising or cross-app tracking.</li>
-            <li>App install date and version</li>
-        </ul>
-        <p><strong>Note:</strong> This data is anonymous and cannot be used to identify you personally.</p>
-    </div>
-
-    <div class="section">
-        <h2>Data Storage and Security</h2>
-        <ul>
-            <li><strong>Local Storage:</strong> All your photos and videos remain on your device. We do not have access
-                to them.</li>
-            <li><strong>Cloud Storage:</strong> Only anonymous analytics data is stored in Firebase (Google's secure
-                cloud platform).</li>
-            <li><strong>No Personal Information:</strong> We do not collect names, email addresses, phone numbers, or
-                any other personally identifiable information.</li>
+            <li><strong>Your photos and videos never leave your device.</strong> We do not
+                upload, copy or store them.</li>
+            <li><strong>There is no sign-in and no account.</strong> We never ask for or
+                receive your name, email address or phone number.</li>
+            <li><strong>The app is free</strong> with no purchases and no subscriptions.</li>
+            <li>We do collect anonymous diagnostic and device information, described below.</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>Third-Party Services</h2>
-        <p>We use the following third-party services:</p>
+        <h2>Your Photos and Videos</h2>
+        <p>The app needs permission to read the media on your device so it can show it to you.
+            That reading happens entirely on your phone. Your photos and videos are never
+            transmitted to us or to anyone else.</p>
+        <p>The app can also <strong>delete</strong> a photo or <strong>share</strong> it to
+            another app, but only when you explicitly ask it to. Sharing hands the file to the
+            app you pick, which then handles it under its own privacy policy.</p>
+    </div>
+
+    <div class="section">
+        <h2>What We Collect</h2>
+        <p>All of the following is handled by Google Firebase on our behalf.</p>
         <ul>
-            <li><strong>Firebase (Google):</strong> For analytics and app configuration. Firebase's privacy policy: <a
-                    href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>
-            </li>
+            <li><strong>An anonymous account identifier.</strong> On first launch the app
+                creates a random, anonymous Firebase account. It is not linked to any
+                real-world identity. Firebase also records the IP address the request came
+                from.</li>
+            <li><strong>Installation details.</strong> The date you installed the app and the
+                app version.</li>
+            <li><strong>Device information.</strong> Manufacturer, brand, model, Android
+                version, security patch level, supported CPU types, build identifiers and
+                whether the device is physical or emulated.</li>
+            <li><strong>An installation identifier</strong> (Firebase Installation ID), used
+                to tell one install of the app apart from another.</li>
+            <li><strong>Crash and error reports</strong> (Firebase Crashlytics), including
+                device state at the time of the crash, so we can fix faults.</li>
+            <li><strong>Basic usage analytics</strong> (Google Analytics for Firebase): an
+                app-instance identifier, your device language and country, and an event
+                recorded when you lock a photo. Analytics derives an approximate location from
+                your IP address. We do not record which photo you locked.</li>
+            <li><strong>Configuration requests</strong> (Firebase Remote Config), which
+                include your country, language, timezone, OS version and app version.</li>
         </ul>
+        <p><strong>We do not collect the Android advertising ID.</strong> The app ships with
+            that permission explicitly removed, and contains no advertising SDK.</p>
+        <p><strong>We do not collect precise location</strong>, contacts, messages, call logs,
+            or the contents of your photos.</p>
     </div>
 
     <div class="section">
-        <h2>Your Rights and Control</h2>
+        <h2>Why We Collect It</h2>
+        <p>To keep the app working and to understand how many people use it and roughly where,
+            so we can decide what to build next. We do not sell your data, and we do not use it
+            for advertising or profiling.</p>
+    </div>
+
+    <div class="section">
+        <h2>Is This Data Anonymous?</h2>
+        <p>We think it is fair to call it <em>pseudonymous</em> rather than anonymous. We never
+            learn your name or email, but the data is tied to a persistent random identifier
+            and includes detailed device characteristics. We do not attempt to identify
+            individuals, and we have no practical means to do so.</p>
+    </div>
+
+    <div class="section">
+        <h2>Who We Share It With</h2>
+        <p>Nobody, other than the service providers that process it for us:</p>
         <ul>
-            <li><strong>Photo Access:</strong> You can revoke photo access permissions at any time through your device
-                settings (Settings → Apps → SwipeLock → Permissions).</li>
-            <li><strong>Analytics:</strong> You can disable analytics by uninstalling the app. We do not offer an
-                opt-out within the app as the data collected is minimal and anonymous.</li>
-            <li><strong>Data Deletion:</strong> Since we do not store your photos or personal data, uninstalling the app
-                removes all app-related data from your device.</li>
+            <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore,
+                Crashlytics, Analytics, Installations, Remote Config) &mdash; see
+                <a href="https://firebase.google.com/support/privacy">Firebase's privacy
+                    policy</a>.</li>
         </ul>
+        <p>We do not sell or rent your data, and we do not share it with advertisers.</p>
     </div>
 
     <div class="section">
-        <h2>Children's Privacy</h2>
-        <p>SwipeLock does not knowingly collect any personal information from children under 13. The app is designed for
-            general audiences.</p>
+        <h2>Retention and Deletion</h2>
+        <p><strong>Uninstalling the app does not delete the data already stored with
+                Firebase.</strong> The anonymous account record and its device information
+            remain until we delete them.</p>
+        <p>To have it deleted, email us at the address below. Because the account is anonymous,
+            we cannot look you up by name &mdash; tell us roughly when you installed the app
+            and on what device, and we will delete what we can identify within 30 days.</p>
     </div>
 
     <div class="section">
-        <h2>Changes to This Privacy Policy</h2>
-        <p>We may update this privacy policy from time to time. The most recent updates to this policy can be seen in the ‘Last Updated’ section.</p>
+        <h2>Your Choices</h2>
+        <p>You can revoke the app's access to your photos at any time in Android Settings, and
+            you can uninstall the app. There is currently no in-app switch to turn analytics
+            off; if that matters to you, please tell us and we will add one.</p>
     </div>
 
     <div class="section">
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this privacy policy, please contact us at:</p>
-        <p><strong>Email:</strong> green.emerald.111999@gmail.com</p>
+        <h2>Advertising</h2>
+        <p>The app currently shows <strong>no ads</strong>. We intend to add advertising in a
+            future version, chosen and served by us rather than by an ad network. If and when
+            that happens we will update this policy before the feature ships, and it will not
+            introduce third-party advertising trackers.</p>
+    </div>
+
+    <div class="section">
+        <h2>Children</h2>
+        <p>SwipeLock is not directed at children under 13, and we do not knowingly collect
+            personal information from them.</p>
+    </div>
+
+    <div class="section">
+        <h2>Security</h2>
+        <p>All data sent to Firebase is encrypted in transit using HTTPS. Access rules restrict
+            each anonymous account's records to that account.</p>
+    </div>
+
+    <div class="section">
+        <h2>Changes to This Policy</h2>
+        <p>If we change this policy we will update the date at the top of this page.</p>
+    </div>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Questions or deletion requests:
+            <a href="mailto:green.emerald.111999@gmail.com">green.emerald.111999@gmail.com</a>
+        </p>
     </div>
 </body>
 
