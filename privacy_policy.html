@@ -37,7 +37,7 @@
 
 <body>
     <h1>Privacy Policy for SwipeLock</h1>
-    <p class="last-updated">Last updated: October 8, 2026</p>
+    <p class="last-updated">Last updated: October 11, 2026</p>
 
     <div class="section">
         <h2>Summary</h2>
@@ -49,7 +49,12 @@
             <li><strong>There is no sign-in and no account.</strong> We never ask for or
                 receive your name, email address or phone number.</li>
             <li><strong>The app is free</strong> with no purchases and no subscriptions.</li>
-            <li>We do collect anonymous diagnostic and device information, described below.</li>
+            <li>We do collect diagnostic and device information, described below.</li>
+            <li><strong>The app shows no ads.</strong> From version 1.2.1 it does tell Meta
+                when it has been installed and opened, using your Android advertising ID, so
+                that we can measure our own ads for SwipeLock. You can switch this off, and on
+                phones the app can tell are in the EU, the EEA, the UK or Switzerland it starts
+                switched off.</li>
         </ul>
     </div>
 
@@ -65,7 +70,8 @@
 
     <div class="section">
         <h2>What We Collect</h2>
-        <p>All of the following is handled by Google Firebase on our behalf.</p>
+        <p>All of the following is handled by Google Firebase on our behalf, except the ad
+            measurement report, which goes to Meta.</p>
         <ul>
             <li><strong>An anonymous account identifier.</strong> On first launch the app
                 creates a random, anonymous Firebase account. It is not linked to any
@@ -86,9 +92,25 @@
                 your IP address. We do not record which photo you locked.</li>
             <li><strong>Configuration requests</strong> (Firebase Remote Config), which
                 include your country, language, timezone, OS version and app version.</li>
+            <li><strong>The Android advertising ID</strong>, from version 1.2.1. This is the
+                resettable identifier that Google Play services gives each device. Google
+                Analytics for Firebase reads it, and so does the Meta SDK described next.</li>
+            <li><strong>Ad measurement</strong> (Meta SDK), from version 1.2.1. We advertise
+                SwipeLock on Facebook and Instagram. So that we can tell which of those ads
+                lead to installs, the app tells Meta Platforms when it has been installed, when
+                it is opened and how long it stayed open. Those reports carry the advertising
+                ID, a random identifier that the Meta SDK creates for this install of the app,
+                the Google Play install referrer, which app store installed the app, on older
+                Android versions an attribution identifier supplied by the Facebook app if it
+                is installed, and basic
+                device and app details such as model, Android version, language, timezone,
+                mobile carrier, screen size, storage size and app version. Meta also sees the
+                IP address the reports came from, and receives reports of errors inside its own
+                code and of changes to these settings. We do not tell Meta which photos you
+                view or lock, or what you do inside the app.</li>
         </ul>
-        <p><strong>We do not collect the Android advertising ID.</strong> The app ships with
-            that permission explicitly removed, and we do not integrate any ad network.</p>
+        <p><strong>The app shows no ads and includes no ad network.</strong> The Meta SDK is
+            there only to measure installs that come from our own ads for SwipeLock.</p>
         <p><strong>We do not collect precise location</strong>, contacts, messages, call logs,
             or the contents of your photos.</p>
     </div>
@@ -96,8 +118,13 @@
     <div class="section">
         <h2>Why We Collect It</h2>
         <p>To keep the app working and to understand how many people use it and roughly where,
-            so we can decide what to build next. We do not sell your data, and we do not use it
-            for advertising or profiling.</p>
+            so we can decide what to build next. And, from version 1.2.1, to learn which of our
+            own ads for SwipeLock lead to installs, so that those ads reach people who are
+            likely to want the app.</p>
+        <p>We do not sell your data, and we do not build a profile of you. Meta uses the
+            reports it receives to match installs to our ads and to decide who is shown them;
+            what else Meta does with them is governed by Meta's own privacy policy, linked
+            below.</p>
     </div>
 
     <div class="section">
@@ -106,11 +133,15 @@
             learn your name or email, but the data is tied to a persistent random identifier
             and includes detailed device characteristics. We do not attempt to identify
             individuals, and we have no practical means to do so.</p>
+        <p>The advertising ID is different. Google and Meta may be able to connect it to an
+            account you hold with them. That is why it has its own switch, described under
+            Your Choices.</p>
     </div>
 
     <div class="section">
         <h2>Who We Share It With</h2>
-        <p>Nobody, other than the service providers that process it for us:</p>
+        <p>Only the companies below. Google processes it for us. Meta receives the ad
+            measurement report and, as described above, also uses it for its own purposes.</p>
         <ul>
             <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore,
                 Crashlytics, Analytics, Installations, Remote Config) &mdash; see
@@ -121,8 +152,13 @@
                 receives the app's version and basic device information. See
                 <a href="https://policies.google.com/privacy">Google's privacy
                     policy</a>.</li>
+            <li><strong>Meta Platforms</strong> (Meta SDK), from version 1.2.1 &mdash; receives
+                the ad measurement report described above, including the advertising ID.
+                See <a href="https://www.facebook.com/privacy/policy/">Meta's privacy
+                    policy</a>.</li>
         </ul>
-        <p>We do not sell or rent your data, and we do not share it with advertisers.</p>
+        <p>We do not sell or rent your data. Apart from the ad measurement report to Meta, we
+            do not share it with any advertising company.</p>
     </div>
 
     <div class="section">
@@ -134,7 +170,8 @@
             app is published and that install may still be in use &mdash; we have no fixed
             expiry date &mdash; or until you ask us to delete it, whichever comes first.
             Analytics and crash data expire on Google's own retention schedule, which we do not
-            control.</p>
+            control. What Meta has received is kept under Meta's own rules, which we do not
+            control either.</p>
         <p>To have it deleted, email us at the address below. Because the account is anonymous,
             we cannot look you up by name &mdash; tell us roughly when you installed the app
             and on what device, and we will delete what we can identify within 30 days.</p>
@@ -144,19 +181,39 @@
         <h2>Your Choices</h2>
         <p>You can revoke the app's access to your photos at any time in Android Settings, and
             you can uninstall the app.</p>
-        <p>You can turn off usage analytics at any time in the app:
-            <strong>Settings &rarr; Share usage data</strong>. Turning it off stops new
-            analytics events immediately. It does not delete what has already been collected
-            &mdash; use the deletion request above for that. Crash reports are still sent, so
-            that we can fix faults that affect you.</p>
+        <p>You can turn off usage analytics and ad measurement at any time in the app:
+            <strong>Settings &rarr; Share usage data</strong>. It is one switch for both.
+            Turning it off stops new analytics events and new reports to Meta, and neither
+            Google Analytics nor Meta is given your advertising ID after that. A request that
+            was already under way may still finish, and until the app is closed Meta's code
+            may still fetch its own configuration, which shows Meta your IP address but
+            carries none of the identifiers above. From the next time the app starts, the
+            Meta SDK is not started at all. It does not
+            delete what has already been collected &mdash; use the deletion request above for
+            what we hold, and Meta's own tools for what Meta holds. Crash reports are still
+            sent to Firebase, so that we can fix faults that affect you.</p>
+        <p><strong>On phones the app can tell are in the European Union, the rest of the
+                European Economic Area, the United Kingdom or Switzerland, this switch starts
+                off.</strong> The app judges that from your phone's region setting, your SIM
+            and the mobile network you are on, and it also starts off when it cannot tell
+            where the phone is. It is a judgement, not a certainty: a phone that shows none of
+            those signs is treated as being elsewhere. Where the switch starts off, the usage
+            analytics and ad measurement described above begin only if you switch them on.
+            Everywhere else the switch starts on.</p>
+        <p>You can also reset or delete your advertising ID for every app in Android Settings,
+            under Privacy or Google &rarr; Ads. The exact place depends on your phone. That
+            does not change the identifier the Meta SDK created for this install; switching
+            Share usage data off stops it being sent.</p>
     </div>
 
     <div class="section">
         <h2>Advertising</h2>
-        <p>The app currently shows <strong>no ads</strong>. We intend to add advertising in a
-            future version, chosen and served by us rather than by an ad network. If and when
-            that happens we will update this policy before the feature ships, and it will not
-            introduce third-party advertising trackers.</p>
+        <p>The app shows <strong>no ads</strong> and includes no ad network. We do advertise
+            SwipeLock itself on Facebook and Instagram, and from version 1.2.1 the app includes
+            the Meta SDK only to measure installs from those ads, as described above.</p>
+        <p>We still intend to show advertising inside the app in a future version, chosen and
+            served by us rather than by an ad network. If and when that happens we will update
+            this policy before the feature ships.</p>
     </div>
 
     <div class="section">
@@ -167,7 +224,8 @@
 
     <div class="section">
         <h2>Security</h2>
-        <p>All data sent to Firebase is encrypted in transit using HTTPS. Access rules restrict
+        <p>All data sent to Firebase and to Meta is encrypted in transit using HTTPS. Access
+            rules restrict
             each anonymous account's records to that account.</p>
     </div>
 
