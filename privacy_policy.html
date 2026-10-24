@@ -37,7 +37,7 @@
 
 <body>
     <h1>Privacy Policy for SwipeLock</h1>
-    <p class="last-updated">Last updated: October 16, 2026</p>
+    <p class="last-updated">Last updated: October 24, 2026</p>
 
     <div class="section">
         <h2>Summary</h2>
@@ -81,21 +81,26 @@
                 app version.</li>
             <li><strong>Device information.</strong> Manufacturer, brand, model, Android
                 version, security patch level, supported CPU types, build identifiers and
-                whether the device is physical or emulated.</li>
+                whether the device is physical or emulated, and whether the app is a test build.</li>
             <li><strong>An installation identifier</strong> (Firebase Installation ID), used
                 to tell one install of the app apart from another.</li>
             <li><strong>Crash and error reports</strong> (Firebase Crashlytics), including
                 device state at the time of the crash, so we can fix faults.</li>
             <li><strong>Basic usage analytics</strong> (Google Analytics for Firebase): an
-                app-instance identifier, your device language and country, an event
+                app-instance identifier, your device language and country, whether the device is an emulator or runs a test build of the app, an event
                 recorded when you lock a photo (with how many items you locked), and an event recorded when you share the app,
                 with the name of the app you shared it through (for example WhatsApp).
+                It also records your answer when the app offers reminders and, if you
+                turn them on, when a reminder is shown or opened.
                 If you installed SwipeLock from a link someone shared from the app, Analytics
                 also records that the install came from a share. Analytics derives an
                 approximate location from your IP address. We do not record which photo you
                 locked, or who you shared the app with.</li>
             <li><strong>Configuration requests</strong> (Firebase Remote Config), which
-                include your country, language, timezone, OS version and app version.</li>
+                include your country, language, timezone, OS version and app version. If
+                you turn on reminders, the app also makes this request in the background
+                in the evening, to fetch the reminder texts. Reminders are created on your
+                phone; no push service is used.</li>
             <li><strong>The Android advertising ID</strong>, from version 1.2.1. This is the
                 resettable identifier that Google Play services gives each device. Google
                 Analytics for Firebase reads it, and so does the Meta SDK described next.</li>
